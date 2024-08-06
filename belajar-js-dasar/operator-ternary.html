@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator ternary</title>
+</head>
+<body>
+    <script>
+
+        const nilai = 75;
+        let ucapan;
+
+        //pake if
+        if (nilai >=75){
+            ucapan = "congrate";
+        } else {
+            ucapan = "nt"
+        }
+        document.writeln(`<p>${ucapan}</p>`)
+
+        //ternary operator
+        ucapan = nilai >= 75 ? "lulus" : "nt";
+        document.writeln(`<p>${ucapan}</p>`)
+
+    </script>
+</body>
+</html>

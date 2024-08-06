@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Target</title>
+</head>
+<body>
+    <input type="button" value="click me" id="clickMe">
+    <script>
+        const button = document.getElementById("clickMe");
+        button.addEventListener("click", function(){
+            button.setAttribute("value","You are ready click me");
+        });
+        button.addEventListener("click", function(){
+            console.log('Button Click')
+        });
+
+    </script>
+</body>
+</html>

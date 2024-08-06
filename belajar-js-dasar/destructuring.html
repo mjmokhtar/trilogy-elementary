@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        {
+        const names = ["Muhammad", "Jumi'at", "Mokhtar", "Cenayang"];
+        const [firstName, middleName, lastName, ...others] = names;
+        
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+        console.info(...others);
+        }
+       
+        {
+        let person = {
+            firstName: "Muhammad",
+            middleName: "Jumi'at",
+            lastName: "Mokhtar",
+            address: {
+                street: "Jalan Pancoran",
+                city: "Jakarta",
+                country: "Indonesia"
+            },
+            hobby: "game",
+            channel: "cenayang"
+        };
+
+        let {firstName, middleName, lastName, address:{street,city,country}, ...others} = person;
+        console.info(city);
+        console.info(others);
+        }
+
+        {
+            function displayPerson({firstName,middleName,lastName}) {
+                console.info(firstName);
+                console.info(middleName);
+                console.info(lastName);                
+            };
+            const person = {
+                firstName: "Muhammad",
+                middleName: "Jumi'at",
+                lastName: "Mokhtar"
+            };
+            displayPerson(person);
+        }
+
+        {
+            function sum([first,second]){
+                return first+second;
+            }
+            console.info(sum([10,30]));
+        }
+
+        {
+            const names = ["Muhammad","Jumi'at"];
+            const [firstName,middleName,lastName = "Cenayang"] = names;
+
+            console.info(firstName);
+            console.info(lastName);
+        }
+
+        {
+            const nama ={
+                firstName: "MJ",
+                
+                lastName: "Mokhtar"
+            };
+            const {
+                firstName : namaDepan,
+                middleName : namaTengah = "Mi'at",
+                lastName: namaBelakang
+            } = nama;
+            console.info(namaDepan);
+            console.info(namaTengah);
+            
+        }
+    </script>
+</body>
+</html>

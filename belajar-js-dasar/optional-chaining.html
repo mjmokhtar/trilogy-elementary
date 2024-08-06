@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining</title>
+</head>
+<body>
+    <script>
+        
+        let person = {
+            address: {
+                country: "Indonesia"
+            }
+        };
+
+
+        console.info(person?.address?.country);        
+        
+        //const country = person.address.country;
+        
+        //document.writeln(`<p> ${country} </p>`);
+
+        let country = person?.address?.country;
+
+        //old scholl
+        if (person.address !== undefined && person.address !== null) {
+            country = person.address.country;
+        }
+
+        document.writeln("sukses");
+
+        document.writeln(`<p> ${country} </p>`);
+
+        document.writeln("sukses");
+    </script>
+</body>
+</html>

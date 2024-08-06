@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //constraction function
+        function Person() {
+            //property 
+            this.firstName = "";
+            this.middleName = "";
+            this.lastName = "";
+            //method
+            this.sayHello =  function(name) {
+                console.info(`Hello ${name}, my name is ${this.middleName}`)
+            }
+        }         
+
+        const mj = new Person();
+        mj.firstName = "Muhammad";
+        mj.middleName = "Jumi'at";
+        mj.lastName = "Mokhtar";
+        mj.sayHello("Cenayang"); 
+
+        const cenayang = new Person();
+        cenayang.firstName = "Hanya";
+        cenayang.middleName = "cenayang";
+        cenayang.lastName = "saja";
+        cenayang.sayHello("MJ");
+
+        console.log(mj);
+        console.log(cenayang);
+
+        
+//--------------------------------------------------------------------------------------
+        //constraction function with parameter
+        function Person(firstName,lastName) {
+            //property 
+            this.firstName = firstName;
+            this.lastName = lastName;
+            //method
+            this.sayHello =  function(name) {
+                console.info(`Hello ${name}, my name is ${this.firstName}`)
+            }
+        }
+        const jum = new Person("MJ", "Mokhtar");       
+        jum.sayHello("Cenayang");
+        console.log(jum); 
+        //
+        /*
+        const mj = {
+            firstName : "Jumi'at"
+        };
+
+        const cenayang = {
+            namaDepan : "Cenayang"
+        }*/
+    </script>
+</body>
+</html>

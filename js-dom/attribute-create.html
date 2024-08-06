@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+</head>
+<body>
+    <img id="logo" alt="gambar">
+    <script>
+        const logo = document.getElementById("logo");        
+        const src = document.createAttribute("src");     
+
+        src.value = "naga.jpg";
+        //logo.setAttributeNode(src);
+        logo.setAttribute("src","naga.jpg");
+        
+        //console.info(src.name);
+        //console.info(src.value);
+    </script>
+</body>
+</html>

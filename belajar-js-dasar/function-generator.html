@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Generator</title>
+</head>
+<body>
+    <script>
+        function* createName() {
+            yield "Muhammad";
+            yield "Jumi'at";
+            yield "Mokhtar";
+        }
+
+        
+        const names = createName();
+        for (const name of names) {
+            console.info(name);
+        }
+
+        //lazy
+        function* buatGanjil(value) {
+            for (let i = 0; i <= value ; i++) {
+                if (i % 2 === 1 ){
+                    console.info(`yeild ${i}`);
+                    yield i;
+                }                
+            }
+        }
+
+        
+
+        const numbers = buatGanjil(100);
+        console.info(numbers.next().value);
+        /*for (const number of numbers){
+            console.info(number);
+        }*/
+
+        //eager
+        function* buatGanjilArray(value) {
+            const result = [];
+            for (let i = 0; i <= value ; i++) {
+                if (i % 2 === 1 ){
+                    console.info(`yeild ${i}`);
+                    result.push(i);
+                }                
+            }
+            return result;
+        }
+        const numbers1 = buatGanjilArray(100);
+        for (const number of numbers1){
+            console.info(number);
+        } 
+
+    </script>
+</body>
+</html>

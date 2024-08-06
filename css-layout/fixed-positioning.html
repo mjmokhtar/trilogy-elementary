@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Positioning</title>
+    <style>
+        .content{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        .content1{
+            position: static;
+            top: 20px;
+            left: 20px;
+        }
+        .content2{
+            position: fixed;
+            top: 220px;
+            left: 220px;
+            background-color: bisque;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="content content1">
+        <h1>Content 1</h1>
+    </div>
+    <div class="content content2">
+        <h1>Content 2</h1>
+    </div>
+    <div class="content content3">
+        <h1>Content 3</h1>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus nam laborum facere voluptatem alias, corporis repellat inventore ullam repellendus quaerat! Ducimus maiores ipsum dignissimos dolores accusamus error sequi rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam similique nemo accusantium veniam natus modi maxime ullam delectus cumque officia neque recusandae ipsa nam veritatis eius, ex pariatur dicta repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates facilis vero dignissimos dicta maxime incidunt pariatur expedita deleniti, facere quia velit perspiciatis reiciendis doloribus qui explicabo eius, eligendi totam?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus nam laborum facere voluptatem alias, corporis repellat inventore ullam repellendus quaerat! Ducimus maiores ipsum dignissimos dolores accusamus error sequi rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam similique nemo accusantium veniam natus modi maxime ullam delectus cumque officia neque recusandae ipsa nam veritatis eius, ex pariatur dicta repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates facilis vero dignissimos dicta maxime incidunt pariatur expedita deleniti, facere quia velit perspiciatis reiciendis doloribus qui explicabo eius, eligendi totam?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus nam laborum facere voluptatem alias, corporis repellat inventore ullam repellendus quaerat! Ducimus maiores ipsum dignissimos dolores accusamus error sequi rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam similique nemo accusantium veniam natus modi maxime ullam delectus cumque officia neque recusandae ipsa nam veritatis eius, ex pariatur dicta repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates facilis vero dignissimos dicta maxime incidunt pariatur expedita deleniti, facere quia velit perspiciatis reiciendis doloribus qui explicabo eius, eligendi totam?</p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex item</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;            
+        }
+        
+        .content {
+            background-color: aqua;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 5px;            
+        }
+
+        .content1{
+            flex-shrink: 1;
+        }
+        .content2{
+            flex-shrink: 2;
+        }
+        .content3{
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem numquam officiis laborum quas non nemo ipsum dolorem alias distinctio quos adipisci illum, voluptatibus inventore dolorum suscipit odio earum illo.</div>     
+        <div class="content content2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore minima expedita repellat sunt! Vero saepe optio incidunt enim veniam, modi animi error itaque soluta, doloribus quidem similique qui, cum ad.</div>   
+        <div class="content content3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod saepe earum, vitae soluta eum possimus autem dolorem cum qui! Sapiente accusantium quasi quam tenetur magni maiores quisquam. Soluta, ipsa.</div>      
+        
+    </div>
+</body>
+</html>

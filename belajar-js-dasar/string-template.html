@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <script>
+        
+        const name = "Muhammad Jumi'at Mokhtar";
+        const template =`Name : ${name}`;
+
+        console.info(template);
+        
+        const firstName = "Muhammad";
+        const middleName = "Jumi'at";
+        const lastName = "Mokhtar";
+
+        const fullName = `Name: ${firstName} ${middleName} ${lastName}`;
+                    
+        document.writeln(firstName + middleName + lastName);
+        document.writeln("<br>");
+        console.info(fullName);
+
+        const value = 80;
+        const template2 = `Name: ${name}, Lulus: ${value > 70}`;
+        console.info(template2);
+
+
+        //multiline string
+        const multiLine = `Nama saya Muhammad Jumi'at Mokhtar
+saya kerja di PT Respati Solusi Teknologi
+        bidang software engineer`
+
+        document.writeln("<pre>");
+        document.writeln(multiLine);
+        document.writeln("</pre>")
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Table</title>
+</head>
+<body>
+    <h1>Belajar Table</h1>
+    <table style="border: 1px solid black;">
+        <colgroup>
+            <col style="background-color: yellow;">
+            <col style="background-color: greenyellow;">
+            <col style="background-color: aqua;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Nilai</th>
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MJ</td>
+                <td>100</td>
+                <td>jakarta</td>
+            </tr>
+            <tr>
+                <td>cenayang</td>
+                <td>100</td>
+                <td>jakarta</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>200</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>200</td>
+                <td></td>
+            </tr>            
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <table style="border: 1px solid black;">
+        <colgroup>
+            <col span="2" style="background-color: yellow;">            
+            <col style="background-color: aqua;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">Nama</th>
+                <th>Nilai</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MJ</td>
+                <td>Mokhtar</td>
+                <td>100</td>                
+            </tr>
+            <tr>
+                <td>cenayang</td>
+                <td>saja</td>
+                <td>100</td>                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td rowspan="2">Total</td>
+                <td>Jumlah</td>
+                <td>200</td>                
+            </tr>
+            <tr>
+                <td>Rata-rata</td>
+                <td>100</td>                
+            </tr>            
+        </tfoot>
+    </table>
+</body>
+</html>

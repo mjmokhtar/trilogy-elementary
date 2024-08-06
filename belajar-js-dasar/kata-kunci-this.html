@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata kunci</title>
+</head>
+<body>
+    <script>
+        console.info(this);
+
+        function sample() {
+            console.info(this);
+            function nested(){
+                console.info(this);
+            }
+            nested();
+        }
+        sample();
+
+        const person = {
+            name: "MJ",
+            sayHello: function (name) {
+                console.info(this);
+                document.writeln(`<p>Hi ${name}, my name is ${this.name}</p>`)                
+            }            
+        }
+
+        person.sayHello("Cenayang");
+
+    </script>
+</body>
+</html>

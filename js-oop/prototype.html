@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    <script>
+     function Person(firstName,lastName) {
+            //property 
+            this.firstName = firstName;
+            this.lastName = lastName;
+            //method
+            this.sayHello =  function(name) {
+                console.info(`Hello ${name}, my name is ${this.firstName}`)
+            }
+        }
+        Person.prototype.sayBye = function(){
+            console.info("Good Bye");
+        }
+
+        Person.prototype.cheos = function(){
+            console.info(`${this.firstName} lagi keos `)
+        }
+
+        const jum = new Person("MJ", "Mokhtar");
+        //tanpa prototype
+        /*jum.sayBye = function(){
+            console.info("Good Bye")
+        }*/
+        const cenayang = new Person("Cenayang", "saja");        
+        console.log(jum);
+        jum.sayBye(); 
+        console.log(cenayang);
+        cenayang.cheos(); 
+    </script>
+</body>
+</html>

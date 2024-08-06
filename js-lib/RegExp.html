@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp (Regular Expresion)</title>
+</head>
+<body>
+    <script>
+        {
+            //create regexp
+            const regexp1 =/mj/;
+            const regexp2 = new RegExp("mj");
+            const regexp3 = new RegExp(/mj/);
+
+            //console.info(regexp1);
+            //console.info(regexp2);
+            //console.info(regexp3);
+
+        }
+        {
+            //test regex
+            
+            const name ="mj mokhtar";
+            const regex = /mj/;
+            let result = regex.exec(name);
+            console.info(result);
+            console.info(regex.exec("name"));
+
+            let test = regex.test(name);
+            console.info(test);
+            console.info(regex.test("name"));
+        }
+        {
+            //regex modifier
+            const name = "Muhammad Jumi'at Mokhtar\n MJ Mokhtar\n mj\n Cenayang";
+            const regex1 =/Mj/igm
+            const regex2 =/cenayang/ig
+
+            let result;
+            while ((result=regex1.exec(name))!== null){
+                console.info(result);
+            }
+            
+            while ((result=regex2.exec(name))!== null){
+                console.info(result);
+            }
+        }
+        {
+            //advance regex
+            const regex =/j[aiu]mi/ig
+            const name = "jami jimi jumi";
+
+            let result;
+            while ((result=regex.exec(name))!== null){
+                console.info(result);
+            }
+        }
+        {
+            const string = "jami jimi jumi";
+
+            console.info(string.match(/j[aiu]mi/ig));
+            console.info(string.search(/j[aiu]mi/ig));
+            //di replace semua karena regex
+            console.info(string.replace(/j[aiu]mi/ig, "good"));
+            console.info(string.replaceAll(/j[aiu]mi/ig, "good"));
+            console.info(string.split(/[aiu]mi/ig));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String dan Number</title>
+</head>
+<body>
+    <script>
+        //tanpa konversi
+        const value1 = parseInt("1");
+        const value2 = 1;
+        const sum = value1 + value2;
+
+        document.writeln(`<p>${sum}</p>`);
+        
+        //dengan konversi
+        document.writeln(`<p>${parseInt("1.5")}</p>`);
+        document.writeln(`<p>${parseFloat("1.5")}</p>`);
+        document.writeln(`<p>${Number("1.5")}</p>`);
+
+        const a = 1;
+        const b = 2;
+        const total = a.toString() + b.toString();
+        document.writeln(`<p>${total}</p>`);
+
+        //NaN
+        document.writeln(`<p>${parseInt("salah")}</p>`);
+        document.writeln(`<p>${parseFloat("1.5mj")}</p>`); //dapat di tolerin dibelakang
+        document.writeln(`<p>${Number("1.5apa")}</p>`); //tidak ada tolerin
+
+        const first = Number("salah")
+        const totalNumber = first + 100;
+        document.writeln(`<p>${totalNumber}</p>`);
+
+        //is NaN()
+        document.writeln(`<p>${isNaN(first)}</p>`);
+        document.writeln(`<p>${isNaN(1.5)}</p>`);
+        document.writeln(`<p>${isNaN(NaN)}</p>`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Line</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: [cline1] 100px [cline2] auto [cline3] 100px [cline4];
+            grid-template-rows: [rline1] 50px [rline2] auto [rline3] 100px;
+        }
+        
+        .content {
+            background-color: rgb(33, 134, 134);
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 10px;            
+            grid-column-start: cline2;
+            grid-column-end: cline3;
+            grid-row-start: rline2;
+            grid-row-end: rline3;
+        }
+
+        .header {
+            background-color: aqua;
+            grid-column-start: cline1;
+            grid-column-end: cline4;
+            grid-row-start: rline1;
+            grid-row-end: rline2;
+        }
+
+        .footer {
+            background-color: aqua;
+            grid-column-start: cline1;
+            grid-column-end: cline4;
+            grid-row-start: rline3;
+            grid-row-end: rline4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat datang di cenayang website
+        </div>
+        <div class="content">
+            <h1>CENAYANG</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quas atque, doloremque provident magnam libero nobis, nam illo aliquid quisquam esse et autem harum, inventore eaque in. Vitae, quis obcaecati?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora et suscipit a. Illum laboriosam sapiente eveniet laudantium tenetur iure facere mollitia saepe iusto facilis? Ipsam sed consequuntur ipsum assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae iusto soluta quo! Veniam eius quaerat quis enim! Voluptatum fuga ipsum tempore quasi necessitatibus, enim sequi non. Non, nostrum reiciendis!</p>
+        </div>
+        <div class="footer">
+            Develop with love by mj
+        </div>
+    </div>
+</body>
+</html>
