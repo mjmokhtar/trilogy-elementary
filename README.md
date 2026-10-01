@@ -1,5 +1,7 @@
 # Trilogy Elementary
 
+🇮🇩 Bahasa Indonesia | [🇬🇧 English](README.en.md)
+
 Repository pembelajaran dasar **HTML, CSS, dan JavaScript** dari nol melalui kumpulan contoh kecil yang dapat dibuka dan dipelajari satu per satu di browser.
 
 Nama **Trilogy Elementary** menggambarkan tiga fondasi utama web development yang dipelajari dalam repository ini:
